@@ -36,6 +36,39 @@ body {
 
 /* 上の部分は気にせずここから書く */
 
-.body {
+header {
+    background-color: lightgray;
+    color: black;
+    padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+body {
 	background-color: #FFEFD5;
+}
+
+.section1 {
+    padding: 150px;
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	background-color: #FFC7AF;
+    font-size: 20px;
+}
+
+.section2 {
+ display: flex;
+ flex-wrap: wrap;
+ padding: 50px;
 }
