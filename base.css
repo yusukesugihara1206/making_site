@@ -41,8 +41,12 @@ header {
     color: black;
     padding: 8px 20px;
 	display: flex;
-	justify-content: space-between;
     align-items: center;
+	justify-content: space-between;
+}
+
+.carousel{
+display :flex
 }
 
 h1 {
@@ -57,7 +61,7 @@ body {
 .section1 {
     padding-left: 150px;
 	padding-right: 150px;
-	line-height: 1.5;
+	line-height: 40px;
 }
 
 h2 {
@@ -72,17 +76,23 @@ nav { display: none; }
 	background: #FFC7AF;
 	position: relative;
 }
+
 .nav-open::before{
 	content: "＋";
 	position: absolute;
 	right: 20px;
 }
+
 .nav-open.active::before{
 	content: "－";
 }
 
 .section2 {
- display: flex;
- flex-wrap: wrap;
- padding: 50px;
+margin-left: 150px;
+margin-top: 50px;
+}
+
+h4{
+	font-size: 20px;
+	font-weight: bold;
 }
