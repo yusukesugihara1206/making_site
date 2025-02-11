@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>making site</title>
-    <link rel="stylesheet" type="text/css" href="base.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+
+ <link rel="stylesheet" type="text/css" href="base.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
     
  <script>
     $(function(){
@@ -14,7 +17,8 @@
        });
     });
  </script>
-        
+
+
  <script>
     $(function(){
 	   $('.nav-open').click(function(){
@@ -24,20 +28,15 @@
     });
 </script>
 
-<script>
-$(function(){
-$(document).on('ready', function() {
-  $(".carousel").slick({
-    autoplay: true, 
-    autoplaySpeed: 4000, 
-    dots: true 
-  });
-});
-});
+
 </script>
 </head>
 
 <body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/swiper-bundle.js"></script>
+<script src="js/main.js"></script>
+
 <header>
 <h1>Casteria</h1>
 <div>
@@ -45,22 +44,25 @@ $(document).on('ready', function() {
     <a href="#">Food</a>
     <a href="#">Drink</a>
     <a href="#">お問合せ</a>
-</div>
-<div>
 <input type="text" id="value">
 <input type="button" id="button" value="Serch">
 </div>
 </header>
 
-<section class="section0">
-<div>
-    <ul class="carousel">
-        <li><img src="img/restaurant.jpg" width="500" height="350">
-        <li><img src="img/food.jpg" width="500" height="350">
-        <li><img src="img/food2.jpg" width="500" height="350">
-        <li><img src="img/interior.jpg" width="500" height="350">
-    </ul>
-</div>
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/restaurant.jpg"></div>
+      <div class="swiper-slide"><img src="img/food.jpg"></div>
+      <div class="swiper-slide"><img src="img/food2.jpg"></div>
+      <div class="swiper-slide"><img src="img/interior.jpg "></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <div class="swiper-scrollbar"></div>
+  </div>
 
 
 
@@ -111,26 +113,71 @@ $(document).on('ready', function() {
 <section class="section2">
  <h4>Signature Food</h4>
  <div class="div2">
-  <img src="img/food.jpg" text-align="left" >
+ <img src="img/food.jpg">
    <p>サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。
     サーモンのおいしさを引き立てる２種のソースも絶品です！</p>
  </div>
 
  <h4>Our coffee</h4>
  <div class="div2">
-    <img src="img/barista.jpg"
-    width="450" height="300">
-    <p>当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを
-        最大限に引き出すために自社のロースたりーで焙煎しています。 </p>
+ <img src="img/barista.jpg" width="450" height="300">
+    <p>当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースたりーで焙煎しています。 </p>
  </div>
 
  <h4>Our food</h4>
  <div class="div2">
-    <img src="img/food3.jpg"
-    width="450" height="300">
-    <p>当店はまず衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。</p>
+ <img src="img/food3.jpg" width="450" height="300">
+    <p>当店は何よりまず衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。</p>
  </div>
  </section>
 
+ <div class="information">
+ <img src="img/barista.jpg" width="450" height="300">
+ <h5>Address</h5>
+ <p>681 xxx Drive, xxxxx xxxx #1-06 000000</p>
+ <p>Opening Hours</p>
+ <h5>Mondays-Friday:10am-9am</h5>
+ <p>Saturdays,Sundays & Public Holidays:9am-9pm</p>
+ </div>
+
+ <h6>店舗一覧</h6>
+ <div class="store_list">
+ <div class="item">
+ <figure>
+    <img src="img/restaurant2.jpg">
+    <figcaption>東京都渋谷区xxxxxx xxxxx</figcaption>
+ </figure>
+ </div>
+
+ <div class="item">
+ <figure>
+    <img src="img/restaurant3.jpg">
+    <figcaption>千葉県松戸市xxxxx xxxxx</figcaption>
+</figure>
+</div>
+
+<div class="item">
+    <figure>
+       <img src="img/restaurant4.jpg">
+       <figcaption>神奈川県横浜市xxxxx xxxx</figcaption>
+   </figure>
+</div>
+
+<div class="item">
+    <figure>
+       <img src="img/restaurant5.jpg">
+       <figcaption>埼玉県川越市xxxxx xxxx</figcaption>
+   </figure>
+</div>
+
+</div>
+
+<footer>
+    <div>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">お問合せ</a>
+        <a href="#">運営会社</a>
+    </div>
+</footer>
 </body>
 </html>
